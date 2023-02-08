@@ -41,7 +41,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ inicio.html }}
+      url: https://victorpl95.github.io/Gatsimes.github.io
     runs-on: ubuntu-latest
     needs: build
     steps:
