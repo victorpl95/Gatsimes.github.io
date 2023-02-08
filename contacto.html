@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+ <html>
+	<head>
+		<meta charset="ISO 8859-1">
+		<title>Protectora Gats i més</title>
+		<link rel="stylesheet" href="gatsimes.css" type="text/css" /> 
+	</head>
+	<body>
+		<header>
+			<h1 id="titulopagina">Protectora Gats i més</h1>
+			<h3 id="encabezado">Somos una Asociación sin ánimo de lucro, cuya función es ayudar a gatos abandonados o maltratados. Para poder darles una segunda vida.</h3>
+		</header>
+		<nav>
+			<ul class="menu">
+				<li><a href="inicio.html">Inicio</a></li>
+				<li><a href="articulos.html">Articulos</a></li>
+				<li><a href="">Adoptar un gato</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="">Tienda</a></li>
+			</ul>
+		</nav>
+		<br>
+		<form name="formulario" action="mailto:tarea2@foc.es" method="post">
+			<div id="tablecontacto">
+				<div class="textocentro" id="contacta">Contactanos</div>
+				<div class="form-group">
+					<label for="nombre">Nombre:</label>
+					<input type="text" name="nombre" id="nombre" placeholder="Pepita" class="form-control" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{5,40}" title="Letras mayusculas y minusculas. Tamaño mínimo: 5. Tamaño máximo: 40" />
+				</div>
+				<div class="form-group">
+					<label for="apellido">Apellido:</label>
+					<input type="text" name="apellido" id="apellido" placeholder="Palotes Sanchez" class="form-control" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{5,40}" title="Letras mayusculas y minusculas. Tamaño mínimo: 5. Tamaño máximo: 40" />
+				</div>
+				<div class="form-group">
+					<label for="edad">Edad:</label>
+					<input type="number" name="edad" id="edad" placeholder="25" required max="122" min="10" />
+				</div>
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" placeholder="ename@example.com" class="form-control" required />
+				</div>
+				<div class="form-group">
+					<label for="texto">Quieres conocernos?<br>En que quieres colaborar?<br> Como puedes ser util?</label>
+					<textarea id="textareaContacto" class="form-control" rows="5" required></textarea>
+				</div>
+				<input type="submit" value="Enviar información" />
+			</div>
+		</form>
+
+		<footer>
+			
+		</footer>
+		</form>
+	</body>
+
+		
