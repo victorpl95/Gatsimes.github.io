@@ -19,6 +19,57 @@
 			<li><a href="">Tienda</a></li>
 		</ul>
 	</nav><br><br>
+	<div class="container">
+		<input id="control" type="checkbox" />
+		<label id="main-menu" for="control">
+			<div class="share top">
+				<div class="toplayer"></div>
+			</div>
+			<div class="share mid">
+				<div class="toplayer"></div>
+			</div>
+			<div class="share bottom">
+				<div class="toplayer"></div>
+			</div>
+		</label>
+		<div class="icon-container">
+			<i class="fa fa-github fa-4x icon-3d"></i>
+			<div class="section one"></div>
+			<div class="section two"></div>
+			<div class="section three"></div>
+			<div class="section four"></div><a class="hover-toggle" href="#"></a>
+		</div>
+		<div class="icon-container">
+			<i class="fa fa-twitter fa-4x icon-3d"></i>
+			<div class="section one"></div>
+			<div class="section two"></div>
+			<div class="section three"></div>
+			<div class="section four"></div><a class="hover-toggle" href="#"></a>
+		</div>
+		<div class="icon-container">
+			<i class="fa fa-instagram fa-4x icon-3d"></i>
+			<div class="section one"></div>
+			<div class="section two"></div>
+			<div class="section three"></div>
+			<div class="section four"></div><a class="hover-toggle" href="#"></a>
+		</div>
+		<div class="icon-container">
+			<i class="fa fa-whatsapp fa-4x icon-3d"></i>
+			<div class="section one"></div>
+			<div class="section two"></div>
+			<div class="section three"></div>
+			<div class="section four"></div><a class="hover-toggle" href="#"></a>
+		</div>
+		<div class="icon-container">
+			<i class="fa fa-facebook fa-4x icon-3d"></i>
+			<div class="section one"></div>
+			<div class="section two"></div>
+			<div class="section three"></div>
+			<div class="section four"></div><a class="hover-toggle" id="final" href="#"></a>
+		</div>
+	</div>
+		
+	
 	<div id="contenedor">
 		<div class="textoinicio">
 			<p>
@@ -36,26 +87,22 @@
 
 			</p>
 		</div>
-		<ul>
-			<li>
-				<button onclick="abrirMapa()">Abrir mapa</button>
-			</li>
-			<li id="mapaindex">
+		<div>
+			<button class="map-button" onclick="abrirMapa()">Abrir mapa</button>
+			<iframe id="ubicacionlocal" class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1497.4293976119302!2d2.0708202049847237!3d41.355422813515645!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a499590ffe91cf%3A0x3321e49bb02c63c1!2sEsgl%C3%A9sia%20de%20Santa%20Maria%20de%20Cornell%C3%A0!5e0!3m2!1ses!2ses!4v1672163822866!5m2!1ses!2ses" width="600" height="300" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			
 
-				<iframe id="ubicacionlocal" class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1497.4293976119302!2d2.0708202049847237!3d41.355422813515645!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a499590ffe91cf%3A0x3321e49bb02c63c1!2sEsgl%C3%A9sia%20de%20Santa%20Maria%20de%20Cornell%C3%A0!5e0!3m2!1ses!2ses!4v1672163822866!5m2!1ses!2ses" width="400" height="300" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</li>
-		</ul>
+
+		</div>
 		<script>
 			function abrirMapa() {
-				var x = document.getElementById("mapaindex").style.visibility;
+                var x = document.getElementById("ubicacionlocal");
 				if (x.style.visibility === "hidden") {
-					document.getElementById("mapaindex").style.visibility = "visible";
+					x.style.visibility = "visible";
 				} else {
-					document.getElementById("mapaindex").style.visibility = "visible";
+					x.style.visibility = "hidden";
 				}
 			}
-
-
 		</script>
 		<div id="sidebar">
 			<img class="foto" src="kuro.jpg" alt=foto">
